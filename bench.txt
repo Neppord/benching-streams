@@ -1,0 +1,32 @@
+deque: 16ms
+deque: 11ms
+deque: 8ms
+deque: 7ms
+deque: 7ms
+deque: 5ms
+deque: 7ms
+deque: 5ms
+deque: 8ms
+deque: 4ms
+pre stream: 305ms
+post stream: 427ms
+pre stream: 115ms
+pre stream: 261ms
+post stream: 371ms
+pre stream: 109ms
+pre stream: 159ms
+post stream: 275ms
+pre stream: 117ms
+pre stream: 154ms
+post stream: 292ms
+pre stream: 171ms
+pre stream: 199ms
+post stream: 336ms
+pre stream: 102ms
+pre stream: 170ms
+post stream: 210ms
+post stream: 84ms
+post stream: 82ms
+post stream: 81ms
+post stream: 90ms
+post stream: 82ms
