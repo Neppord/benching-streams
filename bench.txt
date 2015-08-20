@@ -1,32 +1,32 @@
-deque: 16ms
-deque: 11ms
-deque: 8ms
+deque: 18ms
+deque: 10ms
+deque: 9ms
+deque: 6ms
+deque: 6ms
+deque: 6ms
 deque: 7ms
-deque: 7ms
-deque: 5ms
-deque: 7ms
-deque: 5ms
+deque: 4ms
 deque: 8ms
 deque: 4ms
-pre stream: 305ms
-post stream: 427ms
-pre stream: 115ms
-pre stream: 261ms
-post stream: 371ms
-pre stream: 109ms
-pre stream: 159ms
-post stream: 275ms
-pre stream: 117ms
-pre stream: 154ms
-post stream: 292ms
-pre stream: 171ms
-pre stream: 199ms
-post stream: 336ms
-pre stream: 102ms
-pre stream: 170ms
-post stream: 210ms
-post stream: 84ms
-post stream: 82ms
-post stream: 81ms
-post stream: 90ms
-post stream: 82ms
+post stream: 168ms
+post stream: 85ms
+post stream: 76ms
+post stream: 72ms
+post stream: 100ms
+post stream: 67ms
+post stream: 73ms
+post stream: 76ms
+post stream: 123ms
+post stream: 65ms
+post stream: 68ms
+pre stream: 90ms
+pre stream: 146ms
+pre stream: 77ms
+pre stream: 88ms
+pre stream: 87ms
+pre stream: 137ms
+pre stream: 86ms
+pre stream: 83ms
+pre stream: 90ms
+pre stream: 121ms
+pre stream: 81ms
