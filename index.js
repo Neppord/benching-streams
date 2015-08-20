@@ -6,19 +6,20 @@ function timer (name) {
   return function () {console.timeEnd(name)}
 }
 
-function bench_pre_stream (n) {
+function bench_pre_stream (n, done) {
   var t = timer('pre stream')
   var pass = new Pass({objectMode: true})
   pass.on('data', function () {})
   pass.once('end', function () {
     t()
-    if (n) bench_pre_stream(n - 1)
+    if (n) bench_pre_stream(n - 1, done)
+    else done()
   })
   var i = 100000; while (i--) pass.write({})
   pass.end()
 }
 
-function bench_post_stream (n) {
+function bench_post_stream (n, done) {
   var t = timer('post stream')
   var pass = new Pass({objectMode: true})
   var i = 100000; while (i--) pass.write({})
@@ -26,7 +27,8 @@ function bench_post_stream (n) {
   pass.on('data', function () {})
   pass.once('end', function () {
     t()
-    if (n) bench_post_stream(n - 1)
+    if (n) bench_post_stream(n - 1, done)
+    else done()
   })
 }
 
@@ -41,5 +43,6 @@ function bench_deque (n) {
 }
 
 bench_deque(10)
-bench_post_stream(10)
-bench_pre_stream(10)
+bench_post_stream(10, function () {
+  bench_pre_stream(10, function () {})
+})
